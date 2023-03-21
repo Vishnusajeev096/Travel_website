@@ -4,76 +4,20 @@
     margin: 0;
     padding: 0;
 }
-.main {
-    background-color: black;
-}
 
-.header {
-    height: 1000px;
-    width: 100%;
-    margin-bottom: 600px;
-}
-.navbar-brand{
-    font-family: 'Patua One', cursive;
-    font-weight: bold;
-    letter-spacing: 4px;
-}
-
-.header h1 {
-    padding-top: 150px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-size: 80px;
-    text-align: left;
-    margin-left: 50px;
-}
-
-.header p {
-    font-size: 20px;
-    color: white;
-    text-align: left;
-    margin-left: 70px;
-    padding-top: 40px;
-}
-
-.back-color {
-    background-image: linear-gradient(to right, rgba(128, 128, 128, 0.878), rgba(0, 0, 0, 0.084));
-    width: 100%;
-    height: 1000px;
-    margin-top: -756px;
-}
-
-.back-color h1,
-h3 {
-    text-align: right;
-    margin-right: 150px;
-}
-
-.back-color hr {
-    width: 130px;
-    margin-left: 1360px;
-    border: none;
-    height: 5px;
-    color: rgb(1, 1, 1);
-    background-color: #070707;
-    margin-top: -40px;
-}
-
-@media(width<1000px) {
-
-    .back-color h1,
-    h3,
-    hr {
-        display: none;
-    }
-}
+/* Navbar */
 
 .navbar {
     display: flex;
     align-items: center;
     gap: 25px;
-    margin-top: -900px;
     background: rgba(0, 0, 0, 0.392);
+}
+
+.navbar-brand {
+    font-family: 'Patua One', cursive;
+    font-weight: bold;
+    letter-spacing: 4px;
 }
 
 ul {
@@ -106,36 +50,53 @@ ul {
 
 .link:hover::before {
     scale: 1;
-
 }
+
+/* Carousel */
+
+.carousel-caption h5 {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 80px;
+    text-align: left;
+    font-family: 'Patua One', cursive;
+    margin-top: -900px;
+}
+
+.carousel-caption p{
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    padding-top: 40px;
+}
+@media(width<900) {
+    .carousel-caption h5 {
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 50px;
+        text-align: left;
+        font-family: 'Patua One', cursive;
+    }
+}
+
+/* cards body */
 
 .flip-card {
     background-color: transparent;
-    width: 230px;
+    width: 200px;
     height: 400px;
     perspective: 1000px;
+
 }
 
 .tour_cards h1 {
+    color: white;
     text-align: center;
     letter-spacing: 1px;
     font-size: xx-large;
     font-family: 'Patua One', cursive;
     font-weight: 60px;
     text-transform: uppercase;
-}
-
-.loadmore {
-    height: 40px;
-    background-image: linear-gradient(to top, #262626, #4d4d4d, #666666, #8c8c8c, #a6a6a6);
-    border: none;   
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #070707;
-}
-
-.loadmore:hover {
-    background-image: linear-gradient(to right, #f2f2f2, #d9d9d9, #bfbfbf, #ffffff);
 }
 
 .flip-card-inner {
@@ -195,12 +156,12 @@ ul {
 }
 
 .tour_cards {
-    display: flex;
     justify-content: space-between;
-    height: 1500px;
-    margin-top: 100px;
+    height: 1400px;
+    background-image: linear-gradient(31deg, gray, black);
 }
-@media(width<900px){
+
+@media(width<900px) {
     .tour_cards {
         height: 1800px;
     }
@@ -223,119 +184,20 @@ ul {
     }
 }
 
-.footer {
+/* scnd_body */
+
+.scnd_body{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.scnd_body .row{
     width: 100%;
     height: 1000px;
+    background-color: bisque;
 }
-.footer_text h1 {
-    letter-spacing: 2px;
-    text-align: left;
-    text-transform: uppercase;
-    color: white;
-    font-size: 80px;
-    font-family: 'Patua One', cursive;
-    font-weight: bolder;
-    margin-left: 100px;
-}
-.footer_text h3{
-    margin-left: 80px;
-}
-.video_txt{
-    margin-right: 1160px;
-    color: white;
-    text-transform: uppercase;
-    font-family: 'Patua One', cursive;
-
-}
-.footer_text p{
-    margin-left: 100px;
-    color: white;
-    letter-spacing: 1px;
-    font-size: 20px;
-}
-@media(max-width:600px){
-    .footer_text h1{
-        letter-spacing: 1;
-        text-transform: uppercase;
-        color: white;
-        font-size: 40px;
-        font-family: 'Patua One', cursive;
-        font-weight: bolder;
-        margin-left: 20px;
-    }
-    .footer_text p{
-        margin-left:20px ;
-    }
-
-    .video{
-         margin-left: 50px;
-    }
-}
-.card {
-    margin: 1em auto;
-  }
-  
-  .video_cntnt{
-    margin-top: -600px;
-    margin-left: 200px;
-  }
-  @media(width<900){
-    .video_cntnt{
-        margin-top: 300px;
-    }
-  }
-  .vdcard{
-    margin-left: 600px;
-    margin-top: -300px;
-    border-radius: 10px;
-    transition: 1s ease-in-out ;
-  }
-  .card-video1{
-    border-radius: 10px;
-  }
-  .card-video{
-    border-radius: 10px;
-  }
-  .card-video:hover{
-    transform: scale(1.1);
-  }
-  .card-video1:hover{
-    transform: scale(1.1);
-  }
-  @media(max-width:900)and(min-width:600){
-    .vdcard{
-
-    }
-
-  }
-
-.followus{
-    margin: 0;
-    width: 100%;
-    text-align: center;
-  background-image: linear-gradient(to top, #262626, #4d4d4dad, #66666667, #8c8c8c1e, #a6a6a60d);
+.scnd_body .col{
+    width: 50%;
 }
 
-.followus a{
-    text-decoration: none;
-    color: black;
-}
-.followus h1{
-    font-family: 'Patua One', cursive;
-    font-weight: bold;
-    letter-spacing: 3px;
-
-}
-.followus hr{    
-    border: none;
-    height: 5px;
-    color: rgb(1, 1, 1);
-    background-color: #070707;
-    margin-top: 50px;
-}
-.logo i{
-    color: black;
-    letter-spacing: 150px;
-    align-items: center;
-    margin-top: 20px;
-}

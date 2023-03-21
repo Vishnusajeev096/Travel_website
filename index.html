@@ -17,14 +17,8 @@
 </head>
 
 <body>
-  <div class="header col-lg-6 col-md-4 col-sm-3 "
-    style="background-image: url(./image/pexels-yevhen-sukhenko-3979159.jpg); width: 100%;">
-    <h1 class="text-white">travel time</h1>
-    <p>Don't let the loud noice scares you,<br>
-      Let the rhythms of the dance amuse you. <br>
-      You are given a very rare chance <br>
-      Feel the movement of our ancestors</p>
-  </div>
+
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg  sticky-top ">
     <div class="container">
       <a class="navbar-brand text-white" href="#">VIKING</a>
@@ -60,12 +54,54 @@
       </div>
     </div>
   </nav>
-  <div class="back-color">
+
+  <!-- Carousel -->
+
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="./image/nature-2576652_1920.jpg" class="d-block w-100" alt="..." style="width: 100%;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>travel time</h5>
+          <p>Don't let the loud noice scares you,<br>
+            Let the rhythms of the dance amuse you. <br>
+            You are given a very rare chance <br>
+            Feel the movement of our ancestors</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="/image/mountaineers-5649828_1920.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>travel time</h5>
+          <p>Don't let the loud noice scares you,<br>
+            Let the rhythms of the dance amuse you. <br>
+            You are given a very rare chance <br>
+            Feel the movement of our ancestors</p>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
-  <div class="tour_cards row col-lg-12 col-md-12 col-sm-3">
-    <h1 class="pt-5">Popular Tours</h1>
-    <div class="flip-card col-lg-3 col-md-5 col-sm-6">
+  <!-- card body -->
+
+  <div class="tour_cards row col-lg-12 col-md-12 col-sm-9" style="width: 100%;">
+    <h1 class="pt-5 mt-5 ">Popular Tours</h1>
+    <div class="flip-card col-lg-3 col-md-5 col-sm-6 text-dark">
       <div class="flip-card-inner ms-2">
         <div class="flip-card-front">
           <img src="./image/Taj Mahal- Wonders of World.jpg">
@@ -113,7 +149,7 @@
         </div>
       </div>
     </div>
-        <div class="flip-card col-lg-3 col-md-5 col-sm-6">
+    <div class="flip-card col-lg-3 col-md-5 col-sm-6">
       <div class="flip-card-inner ms-2">
         <div class="flip-card-front">
           <img src="./image/london-3582649_640.jpg">
@@ -162,71 +198,46 @@
       </div>
     </div>
   </div>
-  <div class="footer" style="background-image: url(./image/pine-1.jpg);">
-        <div class="footer_text">
-      <h1 class="">
-        Discover the <br>
-        world in a <br>
-        new way
-      </h1><br>
-      <h3 class="video_txt"> <i class="video fa-regular fa-circle-play  me-2" style="color:white"></i>
-        Watch the video
-      </h3><br><br>
-      <p>"Attachement to things and comfort is the main <br>
-        obstacle to an interesting life. people as a <br>
-        rule, do not realize that at any time they can <br>
-        throw anything out of their lives. Anytime. <br>
-        Instantly." <br>
-        <br>
-        <i class="fa-regular fa-copyright"></i> Carlos Castaneda
-      </p>
-    </div>
-    <div class="vdcard">
-      <div class="card col-lg-6 col-md-12" style="background: transparent; border: none;">
-        <video class="card-video" autoplay loop preload controls>
-          <source src="./videos/trees-50727.mp4" type="video/mp4">
-        </video>
+
+  <!-- scnd body -->
+
+  <div class="scnd_body">
+    <div class="row">
+      <div class="col col-1 container col-lg-3 col-md-4 col-sm-6">
+        <h1 class="head_text">
+          Discover the <br>
+          world in a <br>
+          new way
+        </h1><br>
+        <h3 class="video_txt"> <i class="video fa-regular fa-circle-play  me-2" style="color:white"></i>
+          Watch the video
+        </h3><br><br>
+        <p>"Attachement to things and comfort is the main <br>
+          obstacle to an interesting life. people as a <br>
+          rule, do not realize that at any time they can <br>
+          throw anything out of their lives. Anytime. <br>
+          Instantly." <br>
+          <br>
+          <i class="fa-regular fa-copyright"></i> Carlos Castaneda
+        </p>
       </div>
-      <div class="card col-lg-6 col-md-12 col-sm-6 " style="background: transparent; border: none;">
-        <video class="card-video1" autoplay loop preload controls>
-          <source src="./videos/triumphal-arch-17.mp4" type="video/mp4">
-        </video>
+      <div class="col col-2 container col-lg-3 col-md-4 col-sm-6">
+        <div class="vdcard " style="background: transparent; border: none;">
+          <video class="card-video" autoplay loop preload controls style="width: 400px;">
+            <source src="./videos/trees-50727.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="vdcard " style="background: transparent; border: none;">
+          <video class="card-video" autoplay loop preload controls style="width: 400px;">
+            <source src="./videos/triumphal-arch-17.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
     </div>
+
+
   </div>
-  <div class="followus row pt-5 pb-5">
-    <!-- <div class="viking col col-3">
-      <h1>VIKING</h1>
-    </div> -->
-    <div class="section1 col col-3 ms-3">
-      <h1><a href="">Quick link</a> </h1><br>
-      <h4><a href="">Home</a> </h4>
-      <h4><a href="">Category</a></h4>
-      <h4><a href="">Blog</a></h4>
-      <h4><a href="">About Us</a></h4>
-    </div>
-    <div class="section2 col col-3">
-      <h1><a href="">Quick link</a> </h1><br>
-      <h4><a href="">FAQ's</a> </h4>
-      <h4><a href="">Privacy Policy</a></h4>
-      <h4><a href="">Terms & Condition</a></h4>
-      <h4><a href="">Support</a></h4>
-    </div>
-    <div class="section3 col col-3">
-      <h1>Contact Us</h1>
-      <h6><i class="fa-solid fa-location-dot"></i> 342 Biance Street <br> <span style="font-weight: bold; letter-spacing: 1px;">United Kingdom</spn ></h6><br>
-      <h6><i class="fa-solid fa-phone"></i>1233-2344-4353 <br> </h6>
-      <h6>viking@gmail.com</h6>
-    </div>
-    <hr>
-    <div class="logo">
-      <i class="fa-brands fa-instagram fa-2x"></i>
-      <i class="fa-brands fa-facebook fa-2x"></i>
-      <i class="fa-brands fa-twitter fa-2x"></i>
-      <i class="fa-brands fa-pinterest fa-2x"></i>
-      
-    </div>
-  </div>
+
 </body>
 
 </html>
