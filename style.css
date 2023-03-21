@@ -86,7 +86,6 @@ ul {
     width: 200px;
     height: 400px;
     perspective: 1000px;
-
 }
 
 .tour_cards h1 {
@@ -157,33 +156,14 @@ ul {
 
 .tour_cards {
     justify-content: space-between;
-    height: 1400px;
-    background-image: linear-gradient(31deg, gray, black);
+    background-image: linear-gradient(to bottom, gray, black);
+    height: 800px;
 }
-
-@media(width<900px) {
-    .tour_cards {
-        height: 1800px;
-    }
+.tour_cards1 {
+    justify-content: space-between;
+    background-image: linear-gradient(to top, gray, black);
+    height: 600px;
 }
-
-@media(width<700px) {
-    .tour_cards {
-        height: 2000px;
-    }
-
-    .flip-card {
-        width: 100px;
-        height: 200px;
-        margin-top: 1500px;
-        align-items: center;
-    }
-
-    .flip-card img {
-        height: 150px;
-    }
-}
-
 /* scnd_body */
 
 .scnd_body{
@@ -192,12 +172,19 @@ ul {
     justify-content: space-between;
 
 }
-.scnd_body .row{
+.scnd_body .row1{
     width: 100%;
     height: 1000px;
     background-color: bisque;
 }
 .scnd_body .col{
     width: 50%;
+}
+.row2{
+
+    justify-content:space-around;
+    display: flex;
+    float: left;
+
 }
 
