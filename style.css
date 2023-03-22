@@ -65,7 +65,7 @@ ul {
     margin-top: -900px;
 }
 
-.carousel-caption p{
+.carousel-caption p {
     font-size: 20px;
     color: white;
     text-align: left;
@@ -80,25 +80,35 @@ ul {
     height: 350px;
     perspective: 1000px;
 }
-@media(max-width:768px){
-    .flip-card{
+
+@media(max-width:768px) {
+    .flip-card {
         width: 500px;
         height: 340px;
         margin-left: 40px;
         margin-bottom: 80px;
     }
-    .flip-card-front img{
+
+    .flip-card-front img {
         width: 100%;
         height: 100%;
     }
 }
-@media(min-width:820px){
-    .flip-card{
-        margin-left: 200px;
+
+@media(min-width:820px) {
+    .flip-card-front {
+        margin-left: 60px;
     }
-
-
 }
+
+@media(max-width:280px) {
+
+    .flip-card-front img {
+        image-rendering: auto;
+    }
+}
+
+
 .tour_cards h1 {
     color: white;
     text-align: center;
@@ -165,32 +175,39 @@ ul {
 .flip-card-back h1 {
     margin: 0;
 }
+
 /* scnd_body */
 
-.head_text{
+.head_text {
     font-family: 'Patua One', cursive;
     font-size: 60px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
 }
-.vdcard{
+
+.vdcard {
     transition: 1s ease-in-out;
 }
-.vdcard:hover{
+
+.vdcard:hover {
     transform: scale(1.1);
 }
-@media(max-width:768px){
-    .vdcard{
+
+@media(max-width:768px) {
+    .vdcard {
         transition: 1s ease-in;
     }
-    .vdcard:hover{
+
+    .vdcard:hover {
         transform: scale(1);
     }
 }
+
+
 /* footer */
 
-.footer_body h1{
+.footer_body h1 {
     text-transform: uppercase;
     text-align: center;
     align-items: center;
@@ -199,10 +216,8 @@ ul {
     letter-spacing: 2px;
 
 }
-.logo{
+
+.logo {
     display: flex;
     justify-content: space-evenly;
 }
-
-
-
