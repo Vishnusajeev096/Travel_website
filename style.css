@@ -92,8 +92,12 @@ ul {
         height: 100%;
     }
 }
-@media(max-width:900px)and(min-width:770px){
-    
+@media(min-width:820px){
+    .flip-card{
+        margin-left: 200px;
+    }
+
+
 }
 .tour_cards h1 {
     color: white;
@@ -163,19 +167,42 @@ ul {
 }
 /* scnd_body */
 
-.scnd_body{
-    width: 100%;
+.head_text{
+    font-family: 'Patua One', cursive;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.vdcard{
+    transition: 1s ease-in-out;
+}
+.vdcard:hover{
+    transform: scale(1.1);
+}
+@media(max-width:768px){
+    .vdcard{
+        transition: 1s ease-in;
+    }
+    .vdcard:hover{
+        transform: scale(1);
+    }
+}
+/* footer */
+
+.footer_body h1{
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    font-family: 'Patua One', cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+.logo{
     display: flex;
-    justify-content: space-around;
-    box-sizing: border-box;
+    justify-content: space-evenly;
+}
 
-}
-.scnd_body .col{
-    width: 50%;
-}
-.row::after{
-    content: "";
-    clear: both;
-    display: table;
 
-}
+
