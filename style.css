@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Navbar */
@@ -12,6 +13,7 @@
     align-items: center;
     gap: 25px;
     background: rgba(0, 0, 0, 0.392);
+    box-sizing: border-box;
 }
 
 .navbar-brand {
@@ -40,7 +42,7 @@ ul {
     bottom: 0;
     width: 100%;
     height: 4px;
-    background-color: #740808;
+    background-color: black;
     border-radius: 4px;
     scale: 0 1;
     transform-origin: left;
@@ -69,24 +71,41 @@ ul {
     text-align: left;
     padding-top: 40px;
 }
-@media(width<900) {
-    .carousel-caption h5 {
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        font-size: 50px;
-        text-align: left;
-        font-family: 'Patua One', cursive;
-    }
-}
 
 /* cards body */
 
 .flip-card {
     background-color: transparent;
-    width: 200px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     perspective: 1000px;
 }
+@media(max-width:768px){
+    .flip-card{
+        width: 500px;
+        height: 320px;
+        margin-left: 40px;
+        margin-bottom: 500px;
+
+    }
+    .flip-card1{
+        width: 500px;
+        height: 320px;
+        margin-left: 40px;
+        margin-bottom: 1000px;
+
+    }
+    .flip-card-front img{
+        width: 100%;
+        height: 100%;
+    }
+    .card_body{
+        height:2500px ;
+
+    }
+}
+    
+
 
 .tour_cards h1 {
     color: white;
@@ -127,8 +146,8 @@ ul {
 }
 
 .flip-card-front img {
-    width: 310px;
-    height: 350px;
+    width: 250px;
+    height: 300px;
     margin-top: 1rem;
     border-radius: 10px;
 }
@@ -144,6 +163,8 @@ ul {
     height: 250px;
     margin-top: 1rem;
     border-radius: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .flip-card-back h3 {
@@ -156,12 +177,10 @@ ul {
 
 .tour_cards {
     justify-content: space-between;
-    background-image: linear-gradient(to bottom, gray, black);
     height: 800px;
 }
 .tour_cards1 {
     justify-content: space-between;
-    background-image: linear-gradient(to top, gray, black);
     height: 600px;
 }
 /* scnd_body */
@@ -169,22 +188,16 @@ ul {
 .scnd_body{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    box-sizing: border-box;
 
-}
-.scnd_body .row1{
-    width: 100%;
-    height: 1000px;
-    background-color: bisque;
 }
 .scnd_body .col{
     width: 50%;
 }
-.row2{
-
-    justify-content:space-around;
-    display: flex;
-    float: left;
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
 
 }
-

@@ -57,7 +57,7 @@
 
   <!-- Carousel -->
 
-  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" style="max-width: 100%; height: auto;">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
@@ -66,7 +66,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="./image/nature-2576652_1920.jpg" class="d-block w-100" alt="..." style="width: 100%;">
+        <img src="./image/nature-2576652_1920.jpg" class="d-block" alt="..." style="max-width: 100%;">
         <div class="carousel-caption d-none d-md-block">
           <h5>travel time</h5>
           <p>Don't let the loud noice scares you,<br>
@@ -76,7 +76,7 @@
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="/image/mountaineers-5649828_1920.jpg" class="d-block w-100" alt="...">
+        <img src="/image/mountaineers-5649828_1920.jpg" class="d-block" alt="..." style="max-width: 100%;">
         <div class="carousel-caption d-none d-md-block">
           <h5>travel time</h5>
           <p>Don't let the loud noice scares you,<br>
@@ -98,150 +98,142 @@
   </div>
 
   <!-- card body -->
-    <div class="tour_cards row" style="width: 100%;">
-      <h1 class="pt-5 mt-5 ">Popular Tours</h1>
-      <div class="flip-card col-lg-3 col-md-9 col-sm-12 text-dark">
-        <div class="flip-card-inner ms-2">
-          <div class="flip-card-front">
-            <img src="./image/Taj Mahal- Wonders of World.jpg">
-          </div>
-          <div class="flip-card-back">
-            <img src="./image/Taj Mahal- Wonders of World.jpg" class="card-img" alt="...">
-            <h3 class="card-title">TOUR 1</h3>
-            <h1>R$ : 10000</h1>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card col-lg-3 col-md-12 col-sm-12 ">
-        <div class="flip-card-inner ms-2">
-          <div class="flip-card-front">
-            <img src="./image/pexels-flo-dahm-699466.jpg" alt="">
-          </div>
-          <div class="flip-card-back">
-            <img src="./image/pexels-flo-dahm-699466.jpg" class="card-img" alt="...">
-            <h3 class="card-title">TOUR 2</h3>
-            <h1>R$ : 50000</h1>
+  <div class="container card_body" style="    background-image: linear-gradient(to bottom, gray, black);">
+    <div class="container">
+      <div class="tour_cards row" style="width: 100%;">
+        <h1 class="pt-5 mt-5 ">Popular Tours</h1>
+        <div class="flip-card text-dark  col-lg-3 col-md-5 col-xm-12 col-10">
+          <div class="flip-card-inner ms-2  ">
+            <div class="flip-card-front ">
+              <img src="./image/Taj Mahal- Wonders of World.jpg">
+            </div>
+            <div class="flip-card-back ">
+              <img src="./image/Taj Mahal- Wonders of World.jpg" class="card-img" alt="...">
+              <h3 class="card-title">TOUR 1</h3>
+              <h1>R$ : 10000</h1>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="flip-card col-lg-3 col-md-12 col-sm-12 ">
-        <div class="flip-card-inner ms-2">
-          <div class="flip-card-front">
-            <img src="./image/pexels-pixabay-264151.jpg" alt="">
-          </div>
-          <div class="flip-card-back">
-            <img src="./image/pexels-pixabay-264151.jpg" class="card-img" alt="...">
-            <h3 class="card-title">TOUR 3</h3>
-            <h1>R$ : 20000</h1>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card col-lg-3 col-md-12 col-sm-12 ">
-        <div class="flip-card-inner ms-2">
-          <div class="flip-card-front">
-            <img src="./image/pexels-alex-azabache-3264723.jpg" alt="">
-          </div>
-          <div class="flip-card-back">
-            <img src="./image/pexels-alex-azabache-3264723.jpg" class="card-img" alt="...">
-            <h3 class="card-title">TOUR 4</h3>
-            <h1>R$ : 60000</h1>
+        <div class="flip-card col-lg-3 col-md-5 col-10">
+          <div class="flip-card-inner ms-2">
+            <div class="flip-card-front">
+              <img src="./image/pexels-flo-dahm-699466.jpg" alt="">
+            </div>
+            <div class="flip-card-back">
+              <img src="./image/pexels-flo-dahm-699466.jpg" class="card-img" alt="...">
+              <h3 class="card-title">TOUR 2</h3>
+              <h1>R$ : 50000</h1>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="tour_cards1 row" style="width: 100%;">
-      <div class="flip-card col-lg-3 col-md-12 col-sm-12 ">
-        <div class="flip-card-inner ms-2">
-          <div class="flip-card-front">
-            <img src="./image/london-3582649_640.jpg">
-          </div>
-          <div class="flip-card-back">
-            <img src="./image/london-3582649_640.jpg" class="card-img" alt="...">
-            <h3 class="card-title">TOUR 5</h3>
-            <h1>R$ : 10000</h1>
+        <div class="flip-card col-lg-3 col-md-5 col-sm-3 col-10">
+          <div class="flip-card-inner ms-2">
+            <div class="flip-card-front">
+              <img src="./image/pexels-pixabay-264151.jpg" alt="">
+            </div>
+            <div class="flip-card-back">
+              <img src="./image/pexels-pixabay-264151.jpg" class="card-img" alt="...">
+              <h3 class="card-title">TOUR 3</h3>
+              <h1>R$ : 20000</h1>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="flip-card col-lg-3 col-md-12 col-sm-12 ">
-        <div class="flip-card-inner ms-2">
-          <div class="flip-card-front">
-            <img src="./image/great-wall-of-china-5483516_640.jpg" alt="">
-          </div>
-          <div class="flip-card-back">
-            <img src="./image/great-wall-of-china-5483516_640.jpg" class="card-img" alt="...">
-            <h3 class="card-title">TOUR 6</h3>
-            <h1>R$ : 50000</h1>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card col-lg-3 col-md-12 col-sm-12 ">
-        <div class="flip-card-inner ms-2">
-          <div class="flip-card-front">
-            <img src="./image/pexels-ehveniserle-7995804.jpg" alt="">
-          </div>
-          <div class="flip-card-back">
-            <img src="./image/pexels-ehveniserle-7995804.jpg" class="card-img" alt="...">
-            <h3 class="card-title">TOUR 7</h3>
-            <h1>R$ : 20000</h1>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card col-lg-3 col-md-12 col-sm-12 ">
-        <div class="flip-card-inner ms-2">
-          <div class="flip-card-front">
-            <img src="./image/Coliseum Wallpaper.jpg" alt="">
-          </div>
-          <div class="flip-card-back">
-            <img src="./image/Coliseum Wallpaper.jpg" class="card-img" alt="...">
-            <h3 class="card-title">TOUR 8</h3>
-            <h1>R$ : 60000</h1>
+        <div class="flip-card col-lg-3 col-md-5 col-sm-3 col-10">
+          <div class="flip-card-inner ms-2">
+            <div class="flip-card-front">
+              <img src="./image/pexels-alex-azabache-3264723.jpg" alt="">
+            </div>
+            <div class="flip-card-back">
+              <img src="./image/pexels-alex-azabache-3264723.jpg" class="card-img" alt="...">
+              <h3 class="card-title">TOUR 4</h3>
+              <h1>R$ : 60000</h1>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  <!-- scnd body -->
+    <div class="container">
+      <div class="tour_cards1 row" style="width: 100%;">
+        <div class="flip-card col-lg-3 col-md-5 col-sm-3 col-10 ">
+          <div class="flip-card-inner ms-2">
+            <div class="flip-card-front">
+              <img src="./image/london-3582649_640.jpg">
+            </div>
+            <div class="flip-card-back">
+              <img src="./image/london-3582649_640.jpg" class="card-img" alt="...">
+              <h3 class="card-title">TOUR 5</h3>
+              <h1>R$ : 10000</h1>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card1 col-lg-3 col-md-5 col-sm-3 col-10 ">
+          <div class="flip-card-inner ms-2">
+            <div class="flip-card-front">
+              <img src="./image/great-wall-of-china-5483516_640.jpg" alt="">
+            </div>
+            <div class="flip-card-back">
+              <img src="./image/great-wall-of-china-5483516_640.jpg" class="card-img" alt="...">
+              <h3 class="card-title">TOUR 6</h3>
+              <h1>R$ : 50000</h1>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card1 col-lg-3 col-md-5 col-sm-3 col-10">
+          <div class="flip-card-inner ms-2">
+            <div class="flip-card-front">
+              <img src="./image/pexels-ehveniserle-7995804.jpg" alt="">
+            </div>
+            <div class="flip-card-back">
+              <img src="./image/pexels-ehveniserle-7995804.jpg" class="card-img" alt="...">
+              <h3 class="card-title">TOUR 7</h3>
+              <h1>R$ : 20000</h1>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card1 col-lg-3 col-md-5 col-sm-3 col-10">
+          <div class="flip-card-inner ms-2">
+            <div class="flip-card-front">
+              <img src="./image/Coliseum Wallpaper.jpg" alt="">
+            </div>
+            <div class="flip-card-back">
+              <img src="./image/Coliseum Wallpaper.jpg" class="card-img" alt="...">
+              <h3 class="card-title">TOUR 8</h3>
+              <h1>R$ : 60000</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <div class="scnd_body">
-    <div class="row row1">
-      <div class="col col-1 container col-lg-3 col-md-4 col-sm-6">
+  <!-- scnd body -->
+  <div class="container" style="background-image: linear-gradient(to bottom, gray, black);">
+    <div class="row">
+      <div class="col container col-lg-3 col-md- col-sm-6">
         <h1 class="head_text">
-          Discover the <br>
-          world in a <br>
-          new way
-        </h1><br>
+          Discover the world in a new way
+        </h1>
         <h3 class="video_txt"> <i class="video fa-regular fa-circle-play  me-2" style="color:white"></i>
           Watch the video
-        </h3><br><br>
-        <p>"Attachement to things and comfort is the main <br>
-          obstacle to an interesting life. people as a <br>
-          rule, do not realize that at any time they can <br>
-          throw anything out of their lives. Anytime. <br>
-          Instantly." <br>
+        </h3>
+        <p>"Attachement to things and comfort is the main
+          obstacle to an interesting life. people as a
+          rule, do not realize that at any time they can
+          throw anything out of their lives. Anytime.
+          Instantly."
           <br>
           <i class="fa-regular fa-copyright"></i> Carlos Castaneda
         </p>
       </div>
-      <div class="col col-2 container col-lg-3 col-md-4 col-sm-6">
-        <div class="row row2">
-          <div class="vdcard col col-lg-3 col-md-9 col-sm-12" style="background: transparent; border: none;">
-            <video class="card-video" autoplay loop preload controls style="width: 400px;">
-              <source src="./videos/trees-50727.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="vdcard col col-lg-3 col-md-9 col-sm-12" style="background: transparent; border: none;">
-            <video class="card-video" autoplay loop preload controls style="width: 400px;">
-              <source src="./videos/triumphal-arch-17.mp4" type="video/mp4">
-            </video>
-          </div>
-  
-
+      <div class="row">
+        <div class="vdcard col-lg-8 col-md-5 col-sm-3" style="background: transparent; border: none;">
+          <video class="card-video" autoplay loop preload controls style="max-width:100%;">
+            <source src="./videos/trees-50727.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
-
-
   </div>
-
 </body>
 
 </html>
